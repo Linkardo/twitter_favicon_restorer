@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Icon Replacer",
+  "version": "1.0",
+  "description": "Replaces the Twitter 'X' favicon (tab icon) with the blue bird icon",
+  "content_scripts": [{
+    "matches": ["*://*.twitter.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }],
+  "web_accessible_resources": ["icon16.png"],
+  "permissions": ["activeTab"]
+}
